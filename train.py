@@ -47,10 +47,7 @@ def clean_data(data):
 
 x, y = clean_data(ds)
 
-#Implement one-hot encoding
-
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
-
 
 run = Run.get_context()
 
@@ -59,17 +56,13 @@ def main():
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--C', type=float, default=1.0, help="Inverse of regularization strength. Smaller values cause stronger regularization")
-    parser.add_argument('--max_iter', type=int, default=100, help="Maximum number of iterations to converge")
+    parser.add_argument('--max_iter', type=int, default=1000, help="Maximum number of iterations to converge")
 #I increased the number of iterations as regression model could not converge
     args = parser.parse_args()
 
     run.log("Regularization Strength:", np.float(args.C))
     run.log("Max iterations:", np.int(args.max_iter))
-    
-    #Encoding data from dataframe
-    x_train= OneHotEncoder(drop='first').fit_transform(x_train)
-    x_test= OneHotEncoder(drop='first').fit_transform(x_test)
-    
+        
     model = LogisticRegression(C=args.C, max_iter=args.max_iter).fit(x_train, y_train)
 
     accuracy = model.score(x_test, y_test)
