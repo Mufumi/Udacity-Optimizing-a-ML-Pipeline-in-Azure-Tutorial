@@ -47,9 +47,14 @@ def clean_data(data):
 
 x, y = clean_data(ds)
 
-
-
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
+
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+X_train = sc.fit_transform(x_train)
+X_test = sc.transform(x_test)
+
+
 
 run = Run.get_context()
 
