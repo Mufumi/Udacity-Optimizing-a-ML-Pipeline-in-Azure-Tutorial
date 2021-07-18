@@ -42,10 +42,12 @@ def clean_data(data):
     x_df["poutcome"] = x_df.poutcome.apply(lambda s: 1 if s == "success" else 0)
 
     y_df = x_df.pop("y").apply(lambda s: 1 if s == "yes" else 0)
+    
+    return x_df,y_df
 
 x, y = clean_data(ds)
 
-# TODO: Split data into train and test sets.
+
 
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
 
@@ -57,7 +59,7 @@ def main():
 
     parser.add_argument('--C', type=float, default=1.0, help="Inverse of regularization strength. Smaller values cause stronger regularization")
     parser.add_argument('--max_iter', type=int, default=100, help="Maximum number of iterations to converge")
-
+#I increased the number of iterations as regression model could not converge
     args = parser.parse_args()
 
     run.log("Regularization Strength:", np.float(args.C))
@@ -70,5 +72,5 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
+
 
