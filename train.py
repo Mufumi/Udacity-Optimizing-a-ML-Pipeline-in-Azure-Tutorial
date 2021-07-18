@@ -49,9 +49,6 @@ x, y = clean_data(ds)
 
 #Implement one-hot encoding
 
-x_enc = OneHotEncoder(drop='first').fit_transform(x)
-y_enc = OneHotEncoder().fit_transform(y)
-
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
 
 
@@ -68,7 +65,11 @@ def main():
 
     run.log("Regularization Strength:", np.float(args.C))
     run.log("Max iterations:", np.int(args.max_iter))
-
+    
+    #Encoding data from dataframe
+    x_train= OneHotEncoder(drop='first').fit_transform(x_train)
+    x_test= OneHotEncoder(drop='first').fit_transform(x_test)
+    
     model = LogisticRegression(C=args.C, max_iter=args.max_iter).fit(x_train, y_train)
 
     accuracy = model.score(x_test, y_test)
