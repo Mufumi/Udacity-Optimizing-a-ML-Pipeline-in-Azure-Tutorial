@@ -15,6 +15,8 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 # "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
 url_path ='https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv'
 
+ds = TabularDatasetFactory.from_delimited_files(path=url_path)
+
 def clean_data(data):
     # Dict for cleaning data
     months = {"jan":1, "feb":2, "mar":3, "apr":4, "may":5, "jun":6, "jul":7, "aug":8, "sep":9, "oct":10, "nov":11, "dec":12}
@@ -40,7 +42,14 @@ def clean_data(data):
     x_df["poutcome"] = x_df.poutcome.apply(lambda s: 1 if s == "success" else 0)
 
     y_df = x_df.pop("y").apply(lambda s: 1 if s == "yes" else 0)
-    
+
+x, y = clean_data(ds)
+
+# TODO: Split data into train and test sets.
+
+x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
+
+run = Run.get_context()
 
 def main():
     # Add arguments to script
@@ -62,12 +71,4 @@ def main():
 if __name__ == '__main__':
     main()
     
-ds = TabularDatasetFactory.from_delimited_files(path=url_path)
 
-x, y = clean_data(ds)
-
-# TODO: Split data into train and test sets.
-
-x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.2)
-
-run = Run.get_context()
