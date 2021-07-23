@@ -6,15 +6,18 @@ In this project, we build and optimize an Azure ML pipeline using the Python SDK
 This model is then compared to an Azure AutoML run.
 
 ## Summary
-**In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
 This dataset contains customer data that is going to be used to find the best strategies to improve for the next marketing campaign. The aim is to predict the effectiveness of the current marketing campaign.
-**The best performing model**
+
 The best performing model was a ..... 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
+Sklearn architecture
+Data
+Hyperparamter tuning - 
+classification algorithm - Logistic regression
 
 **What are the benefits of the parameter sampler you chose?**
-
+The random parameter sampler was chosen based on its conservative usage to computing resources.
 **What are the benefits of the early stopping policy you chose?**
 
 ## AutoML
