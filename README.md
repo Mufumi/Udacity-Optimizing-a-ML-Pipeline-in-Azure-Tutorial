@@ -25,12 +25,12 @@ to ensure that the experiments run within specific threshold.
 
 ## AutoML
 
-Using AutoML, the model of choice was the LightGBM classifier which is a fast, distributed, high performance gradient boosting framework based on decision tree algorithm. For data transformation, AutoML used the SKLearn Standard Scaler Wrapper.
+Using AutoML, the model of choice was the XGBoost classifier which is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. For data transformation, AutoML used the SKLearn Sparse Normalizer
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 HyperDrive = 
-Auto ML - Accuracy = 0.91108
+Auto ML - Accuracy = 0.91563
 
 
 ## Future work
