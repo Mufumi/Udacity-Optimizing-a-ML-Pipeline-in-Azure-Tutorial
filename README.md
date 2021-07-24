@@ -15,8 +15,8 @@ The best performing model was a .....
 Sklearn library
 
 The data is obtained from a csv file and converted to structured data using a dataframe.
-Hyperparamter tuning - 
-classification algorithm - Logistic regression
+Hyperparamter tuning - data transformation -> one hot encoder
+classification algorithm - Logistic regression 
 
 **Parameter sampler and stopping policy chosen**
 
