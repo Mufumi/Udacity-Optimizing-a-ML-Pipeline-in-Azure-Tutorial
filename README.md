@@ -11,8 +11,9 @@ This dataset contains customer data that is going to be used to find the best st
 The best performing model was a ..... 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
-Sklearn architecture
-Data
+Sklearn library
+
+The data is obtained from a csv file and converted to structured data using a dataframe.
 Hyperparamter tuning - 
 classification algorithm - Logistic regression
 
