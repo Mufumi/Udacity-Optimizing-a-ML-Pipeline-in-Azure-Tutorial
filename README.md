@@ -10,6 +10,7 @@ This dataset contains customer data that is going to be used to find the best st
 
 The best performing model was a ..... 
 ## Scikit-learn Pipeline
+
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 Sklearn library
 
@@ -18,6 +19,7 @@ Hyperparamter tuning -
 classification algorithm - Logistic regression
 
 **Parameter sampler and stopping policy chosen**
+
 The random parameter sampler was chosen based on its conservative usage to computing resources. The early stopping policy chosen was the Bandit policy 
 to ensure that the experiments run within specific threshold. 
 
