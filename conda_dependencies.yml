@@ -1,4 +1,4 @@
-%%writefile conda_dependencies.yml
+#writefile conda_dependencies.yml
 dependencies:
 - python=3.6.2
 - scikit-learn
