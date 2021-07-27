@@ -8,15 +8,10 @@ This model is then compared to an Azure AutoML run.
 ## Summary
 This dataset contains customer data that is going to be used to find the best strategies to improve for the next marketing campaign. The aim is to predict the effectiveness of the current marketing campaign.
 
-The best performing model was a ..... 
+The best performing model was a Logistic Regression model with the hyperparameters obtained from Hyperdrive.
 ## Scikit-learn Pipeline
 
-**Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
-Sklearn library
-
-The data is obtained from a csv file and converted to structured data using a dataframe.
-Hyperparamter tuning - data transformation -> one hot encoder
-classification algorithm - Logistic regression 
+The data is obtained from a csv file and converted to structured data using a dataframe. It was then cleaned and a OneHotEncoder technique from the sklearn library was implemented to label some features of the data. Once cleaned the data was split into a training set and test set, with the Logistic Regression model chosen as the classifier. The hyperparameters for this model were the Regularization Strength and Max iterations parameters, assisting in the convergence of the model. The best performance model had a regularization strength of 0.3711 and max iterations of 1000.
 
 **Parameter sampler and stopping policy chosen**
 
@@ -29,8 +24,9 @@ Using AutoML, the model of choice was the XGBoost classifier which is an optimiz
 
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
-HyperDrive = 
-Auto ML - Accuracy = 0.91563
+
+Training the model using a script and tuning the hyperparameters using HyperDrive, resulted in an accuracy of 0.9180 after 1 minutes 44 seconds
+The Auto ML model produced an accuracy of 0.91563 within 
 
 
 ## Future work
