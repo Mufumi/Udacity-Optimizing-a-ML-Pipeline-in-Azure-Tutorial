@@ -1,4 +1,4 @@
-!Azure Ml.jpg(https://www.bing.com/images/search?view=detailV2&ccid=FohcHpr9&id=319FAE3F68B52AC79C22F1F793740FDC1A80A88C&thid=OIP.FohcHpr9YtiH1Q1rRUV_eAHaH-&mediaurl=https%3a%2f%2fms-toolsai.gallerycdn.vsassets.io%2fextensions%2fms-toolsai%2fvscode-ai%2f0.6.11%2f1589227842242%2fMicrosoft.VisualStudio.Services.Icons.Default&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.16885c1e9afd62d887d50d6b45457f78%3frik%3djKiAGtwPdJP38Q%26pid%3dImgRaw&exph=538&expw=500&q=Azure+Ml+Workspace+Icon&simid=608030647547276239&FORM=IRPRST&ck=748A6638B594BB1EFB4F1860F6B11550&selectedIndex=0&ajaxhist=0&ajaxserp=0)
+!Azure Ml.jpg(https://github.com/Mufumi/Udacity-Optimizing-a-ML-Pipeline-in-Azure-Tutorial/blob/main/Azure%20Ml.jpg)
 
 # Optimizing an ML Pipeline in Azure
 
