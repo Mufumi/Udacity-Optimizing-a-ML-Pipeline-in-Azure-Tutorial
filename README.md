@@ -1,4 +1,4 @@
-!Azure Ml.jpg(https://github.com/Mufumi/Udacity-Optimizing-a-ML-Pipeline-in-Azure-Tutorial/blob/main/Azure%20Ml.jpg)
+![Azure Ml.jpg](https://github.com/Mufumi/Udacity-Optimizing-a-ML-Pipeline-in-Azure-Tutorial/blob/main/Azure%20Ml.jpg)
 
 # Optimizing an ML Pipeline in Azure
 
