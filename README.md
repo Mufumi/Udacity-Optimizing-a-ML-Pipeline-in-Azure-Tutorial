@@ -23,7 +23,6 @@ to ensure that the experiments run within specific threshold.
 Using AutoML, the model of choice was the XGBoost classifier which is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. For data transformation, AutoML used the SKLearn Sparse Normalizer
 
 ## Pipeline comparison
-**Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 
 Training the model using a script and tuning the hyperparameters using HyperDrive, resulted in an accuracy of 0.9180 after 1 minutes 44 seconds
 The Auto ML model produced an accuracy of 0.91563 within 29 seconds. The HyperDirve parameter optimizer performed with a higher accuracy but required more time and demanded a lot more iterations for tuning the hyperparameters.
