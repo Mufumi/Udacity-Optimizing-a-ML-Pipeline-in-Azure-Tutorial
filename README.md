@@ -26,11 +26,11 @@ Using AutoML, the model of choice was the XGBoost classifier which is an optimiz
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
 
 Training the model using a script and tuning the hyperparameters using HyperDrive, resulted in an accuracy of 0.9180 after 1 minutes 44 seconds
-The Auto ML model produced an accuracy of 0.91563 within 
+The Auto ML model produced an accuracy of 0.91563 within 29 seconds. The HyperDirve parameter optimizer performed with a higher accuracy but required more time and demanded a lot more iterations for tuning the hyperparameters.
 
 
 ## Future work
-**What are some areas of improvement for future experiments? Why might these improvements help the model?**
+For the training model, the selcted model was a Logistic Regression model which performed well considering its accuracy. Alternative classification algorithms can also be considered especially those that require less time to process. Additionally, the training data could have benefited from being encoded using the One Hot Encoder library instead of manually performing the cleaning.
 
 ## Proof of cluster clean up
 **If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
