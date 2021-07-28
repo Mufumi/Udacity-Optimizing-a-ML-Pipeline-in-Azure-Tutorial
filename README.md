@@ -32,5 +32,4 @@ The Auto ML model produced an accuracy of 0.91563 within 29 seconds. The HyperDi
 For the training model, the selcted model was a Logistic Regression model which performed well considering its accuracy. Alternative classification algorithms can also be considered especially those that require less time to process. Additionally, the training data could have benefited from being encoded using the One Hot Encoder library instead of manually performing the cleaning.
 
 ## Proof of cluster clean up
-**If you did not delete your compute cluster in the code, please complete this section. Otherwise, delete this section.**
-**Image of cluster marked for deletion**
+Delete method was used in code but will only occur once the script run is completed
