@@ -7,7 +7,7 @@
 ## Overview
 This project is part of the Udacity Azure ML Nanodegree.
 In this project, we build and optimize an Azure ML pipeline using the Python SDK and a provided Scikit-learn model.
-This model is then compared to an Azure AutoML run.
+This model is then compared to an Azure AutoML run. The experiment is then documented in a [notebook](https://github.com/Mufumi/Udacity-Optimizing-a-ML-Pipeline-in-Azure-Tutorial/blob/main/udacity-project-with-hyperdrive-step.ipynb)
 
 ## Summary
 This dataset contains customer data that is going to be used to find the best strategies to improve for the next marketing campaign. The aim is to predict the effectiveness of the current marketing campaign.
